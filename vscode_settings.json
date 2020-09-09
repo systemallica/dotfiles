@@ -15,9 +15,12 @@
   "terminal.integrated.rendererType": "dom",
   "terminal.integrated.inheritEnv": false,
   "terminal.integrated.shell.osx": "/bin/zsh",
-  // python venvs
+  // python
   "python.venvFolders": ["~/Library/Caches/pypoetry/virtualenvs/"],
   "python.venvPath": "~/Library/Caches/pypoetry/virtualenvs/",
+  "python.formatting.provider": "autopep8",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
   // vue
   "vetur.validation.template": false,
   "[vue]": {
