@@ -1,0 +1,13 @@
+[user]
+	name = Andrés Reverón Molina
+	email = andres@reveronmolina.me
+[filesystem "Oracle Corporation|1.8.0_221|/dev/disk1s5"]
+	timestampResolution = 1001 milliseconds
+	minRacyThreshold = 0 nanoseconds
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
