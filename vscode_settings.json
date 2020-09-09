@@ -1,0 +1,35 @@
+{
+  // appearance
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Cobalt2",
+  "vsicons.dontShowNewVersionMessage": true,
+  // misc
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.autoSave": "afterDelay",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.tabSize": 2,
+  // terminal
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  // python venvs
+  "python.venvFolders": ["~/Library/Caches/pypoetry/virtualenvs/"],
+  "python.venvPath": "~/Library/Caches/pypoetry/virtualenvs/",
+  // vue config
+  "vetur.validation.template": false,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // eslint config
+  "eslint.validate": ["vue", "html", "javascript"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // format on save config
+  "editor.formatOnSave": true,
+  "[django-html]": {
+    "editor.formatOnSave": false
+  }
+}
