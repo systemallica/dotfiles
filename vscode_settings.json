@@ -3,6 +3,7 @@
   "workbench.iconTheme": "vscode-icons",
   "workbench.colorTheme": "Cobalt2",
   "vsicons.dontShowNewVersionMessage": true,
+  "editor.fontLigatures": true,
   // misc
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -15,10 +16,13 @@
   "terminal.integrated.rendererType": "dom",
   "terminal.integrated.inheritEnv": false,
   "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.fontFamily": "Fira Code",
   // python
-  "python.venvFolders": ["~/Library/Caches/pypoetry/virtualenvs/"],
+  "python.venvFolders": [
+    "~/Library/Caches/pypoetry/virtualenvs/"
+  ],
   "python.venvPath": "~/Library/Caches/pypoetry/virtualenvs/",
-  "python.formatting.provider": "autopep8",
+  "python.formatting.provider": "black",
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   // vue
@@ -27,7 +31,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // eslint
-  "eslint.validate": ["vue", "html", "javascript"],
+  "eslint.validate": [
+    "vue",
+    "html",
+    "javascript"
+  ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -42,5 +50,9 @@
   },
   "emmet.includeLanguages": {
     "django-html": "html"
-  }
+  },
+  "python.showStartPage": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
 }
