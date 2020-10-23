@@ -4,6 +4,8 @@
   "workbench.colorTheme": "Cobalt2",
   "vsicons.dontShowNewVersionMessage": true,
   "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 14,
   // misc
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -21,10 +23,15 @@
   "python.venvFolders": [
     "~/Library/Caches/pypoetry/virtualenvs/"
   ],
-  "python.venvPath": "~/Library/Caches/pypoetry/virtualenvs/",
-  "python.formatting.provider": "black",
-  "python.linting.pylintEnabled": false,
+  "python.venvPath": "~/.cache/pypoetry",
   "python.linting.flake8Enabled": true,
+  "python.analysis.memory.keepLibraryAst": true,
+  "python.analysis.memory.keepLibraryLocalVariables": true,
+  "python.autoUpdateLanguageServer": true,
+  "python.formatting.provider": "black",
+  "python.languageServer": "Pylance",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
   // vue
   "vetur.validation.template": false,
   "[vue]": {
@@ -55,4 +62,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }
