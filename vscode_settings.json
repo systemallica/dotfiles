@@ -1,18 +1,25 @@
 {
   // appearance
   "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Cobalt2",
+  "workbench.colorTheme": "Noctis Minimus",
   "vsicons.dontShowNewVersionMessage": true,
   "editor.fontLigatures": true,
   "editor.fontFamily": "Fira Code",
   "editor.fontSize": 14,
+  "editor.renderWhitespace": "all",
   // misc
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "files.autoSave": "afterDelay",
+  "files.exclude": {
+    "**/*.pyc": {
+      "when": "$(basename).py"
+    },
+    "**/__pycache__": true
+  },
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "editor.formatOnSave": true,
   // terminal
   "terminal.integrated.rendererType": "dom",
@@ -25,13 +32,15 @@
   ],
   "python.venvPath": "~/.cache/pypoetry",
   "python.linting.flake8Enabled": true,
-  "python.analysis.memory.keepLibraryAst": true,
-  "python.analysis.memory.keepLibraryLocalVariables": true,
-  "python.autoUpdateLanguageServer": true,
-  "python.formatting.provider": "black",
-  "python.languageServer": "Pylance",
   "python.linting.enabled": true,
-  "python.linting.pylintEnabled": false,
+  "python.formatting.provider": "black",
+  "python.linting.pylintEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.analysis.memory.keepLibraryAst": true,
+  "python.autoUpdateLanguageServer": true,
+  "python.languageServer": "Pylance",
   // vue
   "vetur.validation.template": false,
   "[vue]": {
@@ -64,5 +73,20 @@
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  },
+  "gitlens.statusBar.enabled": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 0,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // AWS
+  "aws.profile": "profile:default",
+  "aws.telemetry": false,
+  // Spelling
+  "cSpell.userWords": [
+    "Dekalabs"
+  ],
 }
