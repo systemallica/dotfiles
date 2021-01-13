@@ -26,12 +26,12 @@
   "terminal.integrated.inheritEnv": false,
   "terminal.integrated.shell.osx": "/bin/zsh",
   "terminal.integrated.fontFamily": "Fira Code",
-  "python.terminal.activateEnvironment": false,
   // python
   "python.venvFolders": [
     "~/Library/Caches/pypoetry/virtualenvs/"
   ],
   "python.venvPath": "~/.cache/pypoetry",
+  "python.terminal.activateEnvironment": false,
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
   "python.formatting.provider": "black",
@@ -62,13 +62,11 @@
   },
   "files.associations": {
     "**/*.html": "html",
+    "**/templates/*/*/*.html": "django-html",
     "**/templates/*/*.html": "django-html",
-    "**/templates/*": "django-txt"
+    "**/templates/*": "django-txt",
+    "*.html": "django-html"
   },
-  "emmet.includeLanguages": {
-    "django-html": "html"
-  },
-  "python.showStartPage": false,
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -80,9 +78,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "window.zoomLevel": 0,
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
   // Spelling
   "cSpell.userWords": [
     "Dekalabs",
@@ -109,10 +104,7 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
-  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  }
 }
