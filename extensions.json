@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "bungcip.better-toml",
+        "streetsidesoftware.code-spell-checker",
+        "batisteo.vscode-django",
+        "ms-azuretools.vscode-docker",
+        "mikestead.dotenv",
+        "editorconfig.editorconfig",
+        "mrorz.language-gettext",
+        "eamodio.gitlens",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "vscode-icons-team.vscode-icons"
+    ]
+}

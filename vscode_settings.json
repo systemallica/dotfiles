@@ -1,7 +1,7 @@
 {
   // appearance
   "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Noctis Minimus",
+  "workbench.colorTheme": "Cobalt2",
   "vsicons.dontShowNewVersionMessage": true,
   "editor.fontLigatures": true,
   "editor.fontFamily": "Fira Code",
@@ -26,6 +26,7 @@
   "terminal.integrated.inheritEnv": false,
   "terminal.integrated.shell.osx": "/bin/zsh",
   "terminal.integrated.fontFamily": "Fira Code",
+  "python.terminal.activateEnvironment": false,
   // python
   "python.venvFolders": [
     "~/Library/Caches/pypoetry/virtualenvs/"
@@ -34,7 +35,7 @@
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
   "python.formatting.provider": "black",
-  "python.linting.pylintEnabled": true,
+  "python.linting.mypyEnabled": true,
   "python.testing.unittestEnabled": false,
   "python.testing.nosetestsEnabled": false,
   "python.testing.pytestEnabled": true,
@@ -80,13 +81,38 @@
   },
   "window.zoomLevel": 0,
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
-  // AWS
-  "aws.profile": "profile:default",
-  "aws.telemetry": false,
   // Spelling
   "cSpell.userWords": [
-    "Dekalabs"
+    "Dekalabs",
+    "Formset",
+    "Pypi",
+    "REDSYS",
+    "backoffice",
+    "deque",
+    "flatpickr",
+    "hmac",
+    "itertools",
+    "mimo",
+    "mypy",
+    "pycrypto",
+    "pyproject",
+    "pytest"
   ],
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
