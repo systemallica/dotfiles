@@ -56,7 +56,7 @@ export PATH="$HOME/.serverless/bin:$PATH"
 [ ! -s /Users/systemallica/.travis/travis.sh ] || source /Users/systemallica/.travis/travis.sh
 
 # load pyenv
-eval "$(pyenv init -)"
+eval "$(pyenv init --path)"
 
 # git extras autocompletion
 source /usr/local/opt/git-extras/share/git-extras/git-extras-completion.zsh
