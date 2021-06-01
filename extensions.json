@@ -10,6 +10,9 @@
         "eamodio.gitlens",
         "ms-python.vscode-pylance",
         "ms-python.python",
-        "vscode-icons-team.vscode-icons"
+        "vscode-icons-team.vscode-icons",
+        "wesbos.theme-cobalt2",
+        "formulahendry.code-runner",
+        "msjsdiag.debugger-for-chrome"
     ]
 }
