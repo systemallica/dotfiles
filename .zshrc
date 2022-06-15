@@ -44,8 +44,6 @@ alias dj="poetry run python manage.py runserver"
 # Syntax highlighting plugin
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-eval "$(direnv hook zsh)"
-
 # Created by `userpath` on 2020-11-05 08:38:06
 export PATH="$PATH:/Users/systemallica/.local/bin"
 
@@ -55,13 +53,41 @@ export PATH="$HOME/.serverless/bin:$PATH"
 # added by travis gem
 [ ! -s /Users/systemallica/.travis/travis.sh ] || source /Users/systemallica/.travis/travis.sh
 
-# load pyenv
-eval "$(pyenv init --path)"
-
 # git extras autocompletion
 source /usr/local/opt/git-extras/share/git-extras/git-extras-completion.zsh
 
+#Android SDK
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH/:$ANDROID_HOME/platform-tools
+export PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$PATH
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# direnv
+eval "$(direnv hook zsh)"
+
+# mongo
+export PATH="/usr/local/opt/mongodb-community@4.4/bin:$PATH"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 #### FIG ENV VARIABLES ####
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
 #### END FIG ENV VARIABLES ####
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/zshrc.post.zsh"
+
+# ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+eval "$(rbenv init - zsh)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
