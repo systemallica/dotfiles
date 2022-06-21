@@ -88,6 +88,9 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 eval "$(rbenv init - zsh)"
 
+# Go
+export PATH="/Users/systemallica/go/bin:$PATH"
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
