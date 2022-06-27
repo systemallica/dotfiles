@@ -31,8 +31,7 @@
   "editor.inlineSuggest.enabled": true,
   "security.workspace.trust.untrustedFiles": "open",
   // onSave
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "onFocusChange",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
@@ -136,4 +135,8 @@
   // Go
   "go.lintOnSave": "file",
   "go.useLanguageServer": true,
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": [
+    "--fast"
+  ],
 }
